@@ -1,0 +1,50 @@
+/tp a
+/tp AKmekanic
+/clear
+/give @s waxed_copper_bulb[block_state={lit="true"}]
+/tp AKmehanik
+/attribute @s minecraft:movement_speed base set 1
+/team list AKmehanik
+/team list 1
+/tp AKmehanik
+/attribute @s minecraft:movement_speed base set 2
+/summon minecraft:horse ~ ~ ~ {Attributes:[{Name:"minecraft:generic.movement_speed",Base:10}]}
+/clear
+/give @s saddle
+/summon minecraft:horse ~ ~ ~ {Attributes:[{Name:"minecraft:generic.movement_speed",Base:0.3375}]}
+/summon minecraft:horse ~ ~ ~ {Attributes:[{Name:"minecraft:generic.movement_speed",Base:10}]}
+/give @s minecraft:golden_apple 64
+/kill @e[type=minecraft:horse
+/clear
+/give @s minecraft:shield[minecraft:enchantments={{"knockback=99"}}]
+/attribute @s minecraft:movement_speed base reset
+/give @s minecraft:shield[minecraft:unbreakable={}]
+/give @s minecraft:elytra[minecraft:unbreakable={}]
+/give @s minecraft:diamond_chestplate[minecraft:unbreakable={}]
+/give @s minecraft:diamond_boots[minecraft:unbreakable={}]
+/give @s minecraft:diamond_helmet[minecraft:unbreakable={}]
+/give @s minecraft:diamond_leggings[minecraft:unbreakable={}]
+/give @s minecraft:totem_of_undying[minecraft:max_stack_size=99] 99
+/give @s minecraft:firework_star[minecraft:max_stack_size=99] 99
+/give @s minecraft:firework_rocket[minecraft:max_stack_size=99] 99
+/effect give @s minecraft:strength infinite 3
+/attribute @s minecraft:max_health base set 20
+/give @s minecraft:water_bucket
+/attribute @s minecraft:max_health base set 20
+/give @s minecraft:totem_of_undying[minecraft:max_stack_size=99] 99
+/effect give @s minecraft:instant_health 10
+/give @s minecraft:wind_charge[minecraft:max_stack_size=99] 99
+/give @s minecraft:water_bucket
+/give @s minecraft:ender_pearl[minecraft:max_stack_size=99] 99
+/give @s minecraft:elytra[minecraft:unbreakable={}]
+/effect give @s minecraft:saturation infinite 10
+/lifewars:adminrevive AKmehanik
+/lifewars:adminrevive PrinceHall
+/clear
+/team add Build Build
+/team join Build
+/tp AKmehanik
+/effect give @s minecraft:strength infinite 10
+/effect give @s minecraft:instant_health 10 10
+/effect give @s minecraft:invisibility
+/give @s minecraft:elytra[minecraft:unbreakable={}]
